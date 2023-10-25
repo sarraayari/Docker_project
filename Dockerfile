@@ -8,7 +8,7 @@ WORKDIR /Docker_project
 COPY . /Docker_project
 
 # Install any needed packages specified in requirements.txt
-RUN chown -R  pip install -r requirements.txt
+RUN chown -r  pip install -r requirements.txt
 
 # Expose the ports for Flask services
 EXPOSE 5001
